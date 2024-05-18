@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class HotelTest {
     @Test
     void throwsExceptionWhenSettingOccupiedRoomNumber() {
-        var h1 = new Hotel("Hotel Słoneczny");
+        var h1 = new Hotel("Hotel Słoneczny", "H0001");
         var r1 = h1.getRooms();
         h1.addRoom(101);
         h1.addRoom(102);
@@ -19,7 +19,7 @@ class HotelTest {
 
     @Test
     void removesRoomByNumber() {
-        var h1 = new Hotel("Hotel Słoneczny");
+        var h1 = new Hotel("Hotel Słoneczny", "H0001");
         var r1 = h1.getRooms();
         h1.addRoom(101);
         h1.removeRoom(101);
