@@ -78,10 +78,8 @@ public class Hotel {
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getAbbreviation() {
-        return abbreviation;
-    }
+    
+    
 
     public List<Room> getRooms() {
         return rooms;
